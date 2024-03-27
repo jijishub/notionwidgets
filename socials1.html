@@ -32,36 +32,28 @@
     }
 
     .fill {
-     .fill {
-  width: 50px;
-  height: 50px;
-  padding: 2%;
-  color: #fff;
-  outline: 0;
-  border: 2px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 10px;
-}
+      width: 50px;
+      height: 50px;
+      padding: 2%;
+      color: #fff;
+      outline: 0;
+      border: 2px solid black;
+      cursor: pointer;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      margin: 10px;
+    }
 
-.fill::after,
-.fill::before {
-  content: "";
-  position: absolute;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  top: -2px;
-  left: -2px;
-  border: 2px solid white;
-  z-index: -1;
-  transition: 0.2s;
-}
-
-.fill::before {
-  z-index: -2;
-  border: 2px solid black;
-}
+    .fill::after {
+      content: "";
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 5px;
+      left: 5px;
+      transition: 0.2s;
+    }
 
     .fill:hover::after {
       top: 0px;
@@ -147,11 +139,12 @@
 
     <div class="wrapper">
 
-   <!-- Start blog Icon -->
+      <!-- Start blog Icon -->
       <div id="blog" onclick="navigate(this.id)" class="fill  blog">
         <span class="icon"><i class="fa-solid fa-blog"></i></span>
       </div>
       <!-- End blog Icon -->
+
 
       <!-- Start email Icon -->
       <div id="email" onclick="navigate(this.id)" class="fill email">
@@ -180,12 +173,6 @@
       </div>
       <!-- End linkedin Icon -->
 
-
-      <!-- Start twitter Icon -->
-      <div id="twitter" onclick="navigate(this.id)" class="fill twitter">
-        <span class="icon"><i class="fab fa-twitter"></i></span>
-      </div>
-      <!-- End twitter Icon -->
 
     </div>
 
