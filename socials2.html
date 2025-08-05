@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 
-<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+<!-- Author: Shorouk Abdelaziz  https://shorouk.dev -->
 
 <html lang="en">
 
@@ -29,7 +28,6 @@
     .wrapper {
       padding-top: 10px;
       display: inline-flex;
-
     }
 
     .social {
@@ -39,6 +37,9 @@
       border-radius: 50%;
       display: grid;
       place-items: center;
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
     }
 
     .icon {
@@ -58,95 +59,78 @@
     }
 
     .instagram:hover {
-      background: rgb(241, 102, 217);
       background: radial-gradient(circle, rgba(241, 102, 217, 1) 10%, rgba(252, 176, 69, 1) 76%, rgba(253, 29, 29, 1) 100%);
     }
 
     .linkedin:hover {
       background-color: #0e76a8;
     }
-    .social {
-      position: relative;
-      margin: 10px;
-      cursor: pointer;
-    }
 
     .social:hover {
       color: #fff;
     }
   </style>
-
 </head>
 
 <body>
+  <div class="wrapper">
 
-  <body>
-
-    <div class="wrapper">
-
-      <!-- Start blog Icon -->
-      <div id="blog" onclick="navigate(this.id)" class="social blog">
-        <span class="icon"><i class="fa-brands fa-google-drive"></i>"></i></span>
-      </div>
-      <!-- End blog Icon -->
-
-      <!-- Start email Icon -->
-      <div id="email" onclick="navigate(this.id)" class="social email">
-        <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
-      </div>
-      <!-- End email Icon -->
-
-      <!-- Start facebook Icon -->
-      <div id="facebook" onclick="navigate(this.id)" class="social facebook">
-        <span class="icon"><i class="fab fa-facebook"></i></span>
-      </div>
-      <!-- End facebook Icon -->
-
-
-      <!-- Start instagram Icon -->
-      <div id="instagram" onclick="navigate(this.id)" class="social instagram">
-        <span class="icon"><i class="fab fa-instagram"></i></span>
-      </div>
-      <!-- End instagram Icon -->
-
-      <!-- Start linkedin Icon -->
-      <div id="linkedin" onclick="navigate(this.id)" class="social linkedin">
-        <span class="icon"><i class="fab fa-linkedin"></i></span>
-      </div>
-      <!-- End linkedin Icon -->
-
+    <!-- Start blog Icon -->
+    <div id="blog" onclick="navigate(this.id)" class="social blog">
+      <span class="icon"><i class="fa-brands fa-google-drive"></i></span>
     </div>
+    <!-- End blog Icon -->
 
+    <!-- Start email Icon -->
+    <div id="email" onclick="navigate(this.id)" class="social email">
+      <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+    </div>
+    <!-- End email Icon -->
 
+    <!-- Start facebook Icon -->
+    <div id="facebook" onclick="navigate(this.id)" class="social facebook">
+      <span class="icon"><i class="fab fa-facebook"></i></span>
+    </div>
+    <!-- End facebook Icon -->
 
+    <!-- Start instagram Icon -->
+    <div id="instagram" onclick="navigate(this.id)" class="social instagram">
+      <span class="icon"><i class="fab fa-instagram"></i></span>
+    </div>
+    <!-- End instagram Icon -->
 
-    <script>
-      function navigate(id) {
+    <!-- Start linkedin Icon -->
+    <div id="linkedin" onclick="navigate(this.id)" class="social linkedin">
+      <span class="icon"><i class="fab fa-linkedin"></i></span>
+    </div>
+    <!-- End linkedin Icon -->
 
-        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+  </div>
 
-        if (id === "blog")
-          window.open("https://drive.google.com/drive/folders/1dJL8F8dIBL-cqq97FcFiaxZFqiQ9F4Mc", '_blank').focus(); //Add the url to your blog
+  <script>
+    function navigate(id) {
+      // if you want the URL to open in the same window use '_parent' instead of '_blank'
 
-        else if (id === "email") {
-          window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
-        }
+      if (id === "blog")
+        window.open("https://drive.google.com/drive/folders/1dJL8F8dIBL-cqq97FcFiaxZFqiQ9F4Mc", '_blank').focus();
 
-        else if (id === "facebook") {
-          window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
-        }
-        else if (id === "instagram") {
-          window.open("instagram.com", '_blank').focus(); //Add the url to your instagram account
-        }
-        else if (id === "linkedin") {
-          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
-        }
+      else if (id === "email") {
+        window.open("mailto:someone@yoursite.com", '_blank').focus();
       }
 
-    </script>
+      else if (id === "facebook") {
+        window.open("https://facebook.com/", '_blank').focus();
+      }
 
+      else if (id === "instagram") {
+        window.open("https://instagram.com", '_blank').focus();
+      }
 
-
-  </body>
+      else if (id === "linkedin") {
+        window.open("https://www.linkedin.com/", '_blank').focus();
+      }
+    }
+  </script>
+</body>
 
 </html>
