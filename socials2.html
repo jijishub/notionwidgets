@@ -31,7 +31,7 @@
     }
 
     .social {
-      background-color: #eae9e9;
+      background-color: #7e422e; /* Updated background */
       width: 55px;
       height: 55px;
       border-radius: 50%;
@@ -46,28 +46,14 @@
       font-size: 1.2em;
     }
 
-    .blog:hover {
-      background-color: #ffbd2f;
+    .icon i {
+      color: #ffffff; /* Updated icon color */
     }
 
-    .email:hover {
-      background-color: #23c8c8;
-    }
-
-    .facebook:hover {
-      background-color: #4267B2;
-    }
-
-    .instagram:hover {
-      background: radial-gradient(circle, rgba(241, 102, 217, 1) 10%, rgba(252, 176, 69, 1) 76%, rgba(253, 29, 29, 1) 100%);
-    }
-
-    .linkedin:hover {
-      background-color: #0e76a8;
-    }
-
+    /* Remove previous hover colors and unify background */
     .social:hover {
       color: #fff;
+      background-color: #7e422e; /* Keep background same on hover */
     }
   </style>
 </head>
@@ -80,56 +66,45 @@
     <div id="blog" onclick="navigate(this.id)" class="social blog">
       <span class="icon"><i class="fa-brands fa-google-drive"></i></span>
     </div>
-    <!-- End blog Icon -->
 
     <!-- Start email Icon -->
     <div id="email" onclick="navigate(this.id)" class="social email">
-      <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+      <span class="icon"><i class="fa-solid fa-envelope"></i></span>
     </div>
-    <!-- End email Icon -->
 
     <!-- Start facebook Icon -->
     <div id="facebook" onclick="navigate(this.id)" class="social facebook">
       <span class="icon"><i class="fab fa-facebook"></i></span>
     </div>
-    <!-- End facebook Icon -->
 
     <!-- Start instagram Icon -->
     <div id="instagram" onclick="navigate(this.id)" class="social instagram">
       <span class="icon"><i class="fab fa-instagram"></i></span>
     </div>
-    <!-- End instagram Icon -->
 
     <!-- Start linkedin Icon -->
     <div id="linkedin" onclick="navigate(this.id)" class="social linkedin">
       <span class="icon"><i class="fab fa-linkedin"></i></span>
     </div>
-    <!-- End linkedin Icon -->
 
   </div>
 
   <script>
     function navigate(id) {
-      // if you want the URL to open in the same window use '_parent' instead of '_blank'
-
       if (id === "blog")
         window.open("https://drive.google.com/drive/folders/1dJL8F8dIBL-cqq97FcFiaxZFqiQ9F4Mc", '_blank').focus();
 
-      else if (id === "email") {
+      else if (id === "email")
         window.open("mailto:someone@yoursite.com", '_blank').focus();
-      }
 
-      else if (id === "facebook") {
+      else if (id === "facebook")
         window.open("https://facebook.com/", '_blank').focus();
-      }
 
-      else if (id === "instagram") {
+      else if (id === "instagram")
         window.open("https://instagram.com", '_blank').focus();
-      }
 
-      else if (id === "linkedin") {
+      else if (id === "linkedin")
         window.open("https://www.linkedin.com/", '_blank').focus();
-      }
     }
   </script>
 
