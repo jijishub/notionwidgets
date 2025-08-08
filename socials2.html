@@ -62,8 +62,8 @@
 
   <div class="wrapper">
 
-    <!-- Start blog Icon -->
-    <div id="blog" onclick="navigate(this.id)" class="social blog">
+    <!-- Start drive Icon -->
+    <div id="drive" onclick="navigate(this.id)" class="social drive">
       <span class="icon"><i class="fa-brands fa-google-drive"></i></span>
     </div>
 
@@ -72,39 +72,31 @@
       <span class="icon"><i class="fa-solid fa-envelope"></i></span>
     </div>
 
-    <!-- Start facebook Icon -->
-    <div id="facebook" onclick="navigate(this.id)" class="social facebook">
-      <span class="icon"><i class="fab fa-facebook"></i></span>
+    <!-- Start school Icon -->
+    <div id="school" onclick="navigate(this.id)" class="social school">
+      <span class="icon"><i class="fa-solid fa-building-columns"></i>></i></span>
     </div>
 
-    <!-- Start instagram Icon -->
-    <div id="instagram" onclick="navigate(this.id)" class="social instagram">
-      <span class="icon"><i class="fab fa-instagram"></i></span>
-    </div>
-
-    <!-- Start linkedin Icon -->
-    <div id="linkedin" onclick="navigate(this.id)" class="social linkedin">
-      <span class="icon"><i class="fab fa-linkedin"></i></span>
+    <!-- Start social Icon -->
+    <div id="social" onclick="navigate(this.id)" class="social social">
+      <span class="icon"><i class="fa-solid fa-square-up-right"></i>i></span>
     </div>
 
   </div>
 
   <script>
     function navigate(id) {
-      if (id === "blog")
+      if (id === "drive")
         window.open("https://drive.google.com/drive/folders/1dJL8F8dIBL-cqq97FcFiaxZFqiQ9F4Mc", '_blank').focus();
 
       else if (id === "email")
-        window.open("mailto:someone@yoursite.com", '_blank').focus();
+        window.open("https://mail.google.com/mail", '_blank').focus();
 
-      else if (id === "facebook")
+      else if (id === "school")
         window.open("https://facebook.com/", '_blank').focus();
 
-      else if (id === "instagram")
-        window.open("https://instagram.com", '_blank').focus();
-
-      else if (id === "linkedin")
-        window.open("https://www.linkedin.com/", '_blank').focus();
+      else if (id === "social")
+        window.open(" ", '_blank').focus();
     }
   </script>
 
